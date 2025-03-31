@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <!-- Lightbulb -->
+  <path d="M30,10 C20,10 15,18 15,25 C15,32 20,35 20,40 L40,40 C40,35 45,32 45,25 C45,18 40,10 30,10 Z" fill="none" stroke="#6E57E0" stroke-width="2"/>
+  
+  <!-- Bulb Base -->
+  <rect x="22" y="40" width="16" height="5" fill="none" stroke="#6E57E0" stroke-width="2"/>
+  <rect x="24" y="45" width="12" height="5" fill="none" stroke="#6E57E0" stroke-width="2"/>
+  
+  <!-- Light Beams -->
+  <path d="M30,5 L30,2" fill="none" stroke="#e94560" stroke-width="2"/>
+  <path d="M20,8 L18,5" fill="none" stroke="#e94560" stroke-width="2"/>
+  <path d="M40,8 L42,5" fill="none" stroke="#e94560" stroke-width="2"/>
+  <path d="M12,20 L8,18" fill="none" stroke="#e94560" stroke-width="2"/>
+  <path d="M48,20 L52,18" fill="none" stroke="#e94560" stroke-width="2"/>
+  
+  <!-- Speed Lines -->
+  <path d="M50,40 L55,38" fill="none" stroke="#4CC9F0" stroke-width="2"/>
+  <path d="M53,45 L58,45" fill="none" stroke="#4CC9F0" stroke-width="2"/>
+  <path d="M50,50 L55,52" fill="none" stroke="#4CC9F0" stroke-width="2"/>
+  
+  <!-- Lightning Bolt Inside -->
+  <path d="M30,15 L26,25 L33,25 L28,35" fill="none" stroke="#e94560" stroke-width="2"/>
+  
+  <!-- Innovation Dots -->
+  <circle cx="25" cy="22" r="2" fill="#4CC9F0"/>
+  <circle cx="35" cy="22" r="2" fill="#4CC9F0"/>
+  <circle cx="25" cy="32" r="2" fill="#4CC9F0"/>
+  <circle cx="35" cy="32" r="2" fill="#4CC9F0"/>
+</svg> 

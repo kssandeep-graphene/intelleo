@@ -1,0 +1,10 @@
+intelleo-website/
+├── .env
+├── src/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+├── index.html
+└── web.config 
