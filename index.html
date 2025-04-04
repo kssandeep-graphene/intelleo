@@ -3,353 +3,316 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Intelleo - Innovative AI Solutions since 2020. We specialize in Agentic AI, NLP, Predictive Analytics, and Data Engineering solutions.">
     <title>Intelleo - Advanced AI Solutions</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="src/images/Intelleo Logo.png">
-    <!-- Font Awesome for additional icons -->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom overrides for specific styling issues -->
-    <style>
-        /* Force display of correct value in Graphene case study */
-        .case-study .results-list li:first-child strong::before {
-            content: none !important;
-        }
-        .case-study .results-list li:first-child strong i {
-            color: #e94560 !important;
-        }
-        .case-study .results-list li:first-child strong {
-            color: #4CC9F0 !important;
-        }
-        /* Hide any content with 0% in it */
-        [class*="0%"], [style*="0%"] {
-            display: none !important;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="dark-theme">
+<body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="src/images/Intelleo Logo.png" alt="Intelleo Logo" class="logo-img">
-                <span>Intelleo</span>
-            </div>
-            <div class="nav-links">
-                <a href="#services"><i class="fas fa-cogs fa-sm"></i> Services</a>
-                <a href="#capabilities"><i class="fas fa-rocket fa-sm"></i> Capabilities</a>
-                <a href="#case-studies"><i class="fas fa-clipboard-check fa-sm"></i> Case Studies</a>
-                <a href="#journey"><i class="fas fa-road fa-sm"></i> AI Journey</a>
-                <a href="#about"><i class="fas fa-info-circle fa-sm"></i> About</a>
-                <a href="#contact"><i class="fas fa-envelope fa-sm"></i> Contact</a>
-            </div>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-        <div class="menu-overlay"></div>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="images/Logo.png" alt="Intelleo Logo"><span class="logo-text">Intelleo</span></a>
+                </div>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#success" class="nav-link">Success Stories</a></li>
+                    <li><a href="#case-study" class="nav-link">Case Study</a></li>
+                    <li><a href="#journey" class="nav-link">AI Journey</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <h1>Transforming Business Through AI Innovation</h1>
-                <p>Empowering businesses through advanced Agentic AI, Natural Language Processing, Predictive Analytics, and Data Engineering solutions since 2020</p>
-                <a href="#contact" class="cta-button"><i class="fas fa-rocket"></i> Start Your AI Journey</a>
+    <div class="hero-wrapper">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="typing-text">Empowering Businesses Through Agentic AI</h1>
+                    <p class="fade-in-after-typing">Insights from data, insights from AI.</p>
+                    <p class="fade-in-after-typing">Productivity from automation, productivity from AI.</p>
+                    <div class="hero-buttons fade-in-after-typing">
+                        <a href="#services" class="btn">Our Services</a>
+                        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                    </div>
+                </div>
             </div>
             <div class="hero-overlay"></div>
         </section>
+    </div>
 
-        <section id="mission" class="mission-section">
-            <div class="container">
-                <h2><i class="fas fa-bullseye"></i> Our Mission</h2>
-                <p>To transform complex data into actionable insights, fostering innovation and driving strategic growth for businesses across industries.</p>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Intelleo</h2>
+                <div class="underline"></div>
             </div>
-            <div class="section-divider"></div>
-        </section>
-
-        <section id="capabilities" class="capabilities-section">
-            <div class="container">
-                <h2><i class="fas fa-rocket"></i> Our Capabilities</h2>
-                <div class="capabilities-grid">
-                    <div class="capability-card">
-                        <div class="card-icon">
-                            <img src="src/images/personalized-icon.svg" alt="Personalized Precision">
-                        </div>
-                        <h3>Personalized Precision</h3>
-                        <p>Engage every customer, every time. Our AI solutions deliver hyper-personalized experiences that enhance loyalty and satisfaction. From dynamic product recommendations to responsive chatbots, we tailor interactions that resonate on an individual level.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="card-icon">
-                            <img src="src/images/innovation-icon.svg" alt="Accelerated Innovation">
-                        </div>
-                        <h3>Accelerated Innovation</h3>
-                        <p>Innovate at the speed of thought. Our AI-driven approaches shorten product development cycles by generating prototypes, testing concepts, and refining designs swiftly. Achieve faster innovation with reduced time-to-market and improved efficiency.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="card-icon">
-                            <img src="src/images/insight-icon.svg" alt="Insight Amplification">
-                        </div>
-                        <h3>Insight Amplification</h3>
-                        <p>Turn data into actionable ideas. Our AI solutions don't just process information—they create meaningful insights. Unlock hidden patterns, predict trends, and generate creative solutions that drive smarter business decisions.</p>
-                    </div>
-                    <div class="capability-card">
-                        <div class="card-icon">
-                            <img src="src/images/workflow-icon.svg" alt="Workflow Revolution">
-                        </div>
-                        <h3>Workflow Revolution</h3>
-                        <p>Boost productivity across every team. Our AI automates tedious tasks, freeing your workforce to focus on strategic initiatives. By handling repetitive processes, we enhance productivity and foster a culture of innovation.</p>
-                    </div>
+            <div class="image-text-grid">
+                <div class="section-text">
+                    <p>At Intelleo, we are dedicated to empowering businesses through advanced Agentic AI, Natural Language Processing (NLP), Predictive Analytics, and Data Engineering solutions. Our innovative technology transforms complex data into actionable insights, driving strategic growth and sparking innovation at every level.</p>
+                    <p>We offer productivity solutions that streamline operations, optimize resource allocation, and enhance decision-making processes. Our suite of business-centered solutions is meticulously designed to address the unique challenges faced by modern enterprises, enabling them to achieve operational excellence and sustainable competitive advantage.</p>
+                    <p>Backed by extensive domain knowledge, our experts harness years of industry experience to understand and anticipate market trends. This deep understanding allows us to tailor our solutions to the specific needs of each client, ensuring that every strategy we implement is both effective and forward-thinking.</p>
+                    <p>At the core of our success is a world-class solutioning team. Comprising top-tier data scientists, engineers, and business strategists, our team is committed to delivering cutting-edge technology and exceptional service. We pride ourselves on our ability to combine technical excellence with creative problem-solving, forging robust partnerships that pave the way for future innovation.</p>
+                    <p>With Intelleo, you are not only investing in advanced technology—you are partnering with a leader dedicated to transforming data into opportunities for growth and success.</p>
                 </div>
             </div>
-            <div class="section-divider"></div>
-        </section>
+        </div>
+    </section>
 
-        <section id="services" class="services-section">
-            <div class="container">
-                <h2><i class="fas fa-cogs"></i> Our AI Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="card-icon">
-                            <img src="src/images/agentic-icon.svg" alt="Agentic AI">
-                        </div>
-                        <h3>Agentic AI</h3>
-                        <p>Autonomous AI agents that transform business processes and decision-making</p>
-                        <div class="service-features">
-                            <span><i class="fas fa-check-circle"></i> Autonomous Workflows</span>
-                            <span><i class="fas fa-check-circle"></i> Decision Support</span>
-                            <span><i class="fas fa-check-circle"></i> Process Optimization</span>
-                        </div>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-check"></i>
                     </div>
-                    <div class="service-card">
-                        <div class="card-icon">
-                            <img src="src/images/nlp-icon.svg" alt="Natural Language Processing">
-                        </div>
-                        <h3>Natural Language Processing</h3>
-                        <p>Advanced language understanding and generation for enhanced communication</p>
-                        <div class="service-features">
-                            <span><i class="fas fa-check-circle"></i> Text Analysis</span>
-                            <span><i class="fas fa-check-circle"></i> Sentiment Analysis</span>
-                            <span><i class="fas fa-check-circle"></i> Content Generation</span>
-                        </div>
+                    <h3>Personalized Precision</h3>
+                    <p>Engage every customer, every time. Our AI solutions deliver hyper-personalized experiences that enhance loyalty and satisfaction. From dynamic product recommendations to responsive chatbots, we tailor interactions that resonate on an individual level.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
                     </div>
-                    <div class="service-card">
-                        <div class="card-icon">
-                            <img src="src/images/analytics-icon.svg" alt="Predictive Analytics">
-                        </div>
-                        <h3>Predictive Analytics</h3>
-                        <p>Data-driven forecasting and insights for strategic business decisions</p>
-                        <div class="service-features">
-                            <span><i class="fas fa-check-circle"></i> Trend Forecasting</span>
-                            <span><i class="fas fa-check-circle"></i> Pattern Recognition</span>
-                            <span><i class="fas fa-check-circle"></i> Risk Assessment</span>
-                        </div>
+                    <h3>Accelerated Innovation</h3>
+                    <p>Innovate at the speed of thought. Our AI-driven approaches shorten product development cycles by generating prototypes, testing concepts, and refining designs swiftly. Achieve faster innovation with reduced time-to-market and improved efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    <div class="service-card">
-                        <div class="card-icon">
-                            <img src="src/images/data-icon.svg" alt="Data Engineering">
-                        </div>
-                        <h3>Data Engineering</h3>
-                        <p>Robust data infrastructure and pipeline development for AI-ready organizations</p>
-                        <div class="service-features">
-                            <span><i class="fas fa-check-circle"></i> Data Pipeline Design</span>
-                            <span><i class="fas fa-check-circle"></i> ETL Processes</span>
-                            <span><i class="fas fa-check-circle"></i> Data Governance</span>
-                        </div>
+                    <h3>Insight Amplification</h3>
+                    <p>Turn data into actionable ideas. Our AI solutions don't just process information—they create meaningful insights. Unlock hidden patterns, predict trends, and generate creative solutions that drive smarter business decisions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
                     </div>
+                    <h3>Workflow Revolution</h3>
+                    <p>Boost productivity across every team. Our AI automates tedious tasks, freeing your workforce to focus on strategic initiatives. By handling repetitive processes, we enhance productivity and foster a culture of innovation.</p>
                 </div>
             </div>
-            <div class="section-divider"></div>
-        </section>
+        </div>
+    </section>
 
-        <section id="case-studies" class="case-studies-section">
-            <div class="container">
-                <h2><i class="fas fa-clipboard-check"></i> Success Stories</h2>
-                
-                <div class="case-study">
-                    <div class="case-study-header">
-                        <h3><i class="fas fa-star"></i> Customer Success Story: Graphene</h3>
-                        <img src="src/images/graphene-logo.svg" alt="Graphene" class="case-study-logo">
-                    </div>
+    <section id="success" class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Success Story</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="image-text-grid reverse">
+                <div class="section-image">
+                    <img src="images/dashboards.png" alt="AI Analytics Dashboards">
+                </div>
+                <div class="section-text">
+                    <h3>Graphene</h3>
                     <p>Graphene, an AI-driven market research company, leverages Intelleo's AI solutions to enhance efficiency and accuracy in data analysis. By deploying domain-specific chatbots and AI-driven market research tools, Graphene has achieved:</p>
-                    <ul class="results-list">
-                        <!-- Force display of correct percentage -->
-                        <li style="display: block !important; padding: 0.8rem 0; position: relative; transition: transform 0.3s ease;">
-                            <div style="display: inline-block; font-weight: bold; color: #4CC9F0;">
-                                <i class="fas fa-chart-line" style="color: #e94560;"></i>
-                                <span style="color: #4CC9F0; font-weight: bold;"> 50% Reduction in Research Time:</span>
-                            </div> 
-                            AI-powered analysis tools streamlined data processing and insight generation.
-                        </li>
-                        <li><strong><i class="fas fa-comments"></i> Enhanced Domain-Specific Interactions:</strong> Custom AI chatbots enabled more intuitive and targeted customer interactions.</li>
-                        <li><strong><i class="fas fa-rocket"></i> 40% Increase in Productivity:</strong> Automated workflows and predictive analytics optimized resource allocation and business strategy.</li>
+                    <ul class="success-metrics">
+                        <li><strong>50% Reduction in Research Time:</strong> AI-powered analysis tools streamlined data processing and insight generation.</li>
+                        <li><strong>Enhanced Domain-Specific Interactions:</strong> Custom AI chatbots enabled more intuitive and targeted customer interactions.</li>
+                        <li><strong>40% Increase in Productivity:</strong> Automated workflows and predictive analytics optimized resource allocation and business strategy.</li>
                     </ul>
                 </div>
-                
-                <div class="case-study">
-                    <div class="case-study-header">
-                        <h3><i class="fas fa-flask"></i> Case Study: Transforming Market Research and Analytics for Pharma & FMCG</h3>
-                        <img src="src/images/pharma-fmcg.svg" alt="Pharma & FMCG" class="case-study-logo">
-                    </div>
-                    
-                    <h4><i class="fas fa-info-circle"></i> Overview:</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-study" class="case-study">
+        <div class="container">
+            <div class="section-header">
+                <h2>Case Study: Transforming Market Research and Analytics</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="image-text-grid">
+                <div class="section-image">
+                    <img src="images/office.png" alt="Modern Office Environment">
+                </div>
+                <div class="section-text">
+                    <h3>Overview</h3>
                     <p>In the highly competitive pharma and FMCG sectors, businesses rely on precise market research and data analytics to stay ahead. A leading firm faced challenges in extracting insights from large-scale datasets, tracking consumer trends, and optimizing product launches. Intelleo partnered with them to deploy AI-driven solutions for real-time analytics, predictive modeling, and workflow automation.</p>
-                    
-                    <h4><i class="fas fa-exclamation-triangle"></i> Problem:</h4>
-                    <ul>
-                        <li><i class="fas fa-database"></i> Large, unstructured datasets made extracting meaningful insights difficult.</li>
-                        <li><i class="fas fa-clock"></i> Traditional market research methods were slow and resource-intensive.</li>
-                        <li><i class="fas fa-chart-bar"></i> Limited ability to track real-time consumer behavior and preferences.</li>
-                        <li><i class="fas fa-lightbulb"></i> Inefficiencies in data-driven decision-making impacted product launches and campaign effectiveness.</li>
-                    </ul>
-                    
-                    <h4><i class="fas fa-robot"></i> AI-Driven Solution:</h4>
-                    <ul>
-                        <li><strong><i class="fas fa-chart-pie"></i> Advanced Data Analytics:</strong> AI-powered tools processed vast datasets to generate real-time insights on consumer trends and market movements.</li>
-                        <li><strong><i class="fas fa-brain"></i> Predictive Modeling:</strong> Machine learning algorithms forecasted sales trends, customer preferences, and demand shifts for proactive decision-making.</li>
-                        <li><strong><i class="fas fa-comments"></i> Domain-Specific Chatbots:</strong> Intelligent AI-driven assistants facilitated industry-specific queries, accelerating research timelines.</li>
-                        <li><strong><i class="fas fa-file-alt"></i> Automated Reporting & Visualization:</strong> AI-generated reports provided clear, actionable insights, reducing manual data processing time.</li>
-                    </ul>
-                    
-                    <h4><i class="fas fa-trophy"></i> Key Results:</h4>
-                    <ul class="results-list">
-                        <li><strong><i class="fas fa-tachometer-alt"></i> 70% Faster Market Research:</strong> AI-powered tools accelerated data collection, processing, and analysis.</li>
-                        <li><strong><i class="fas fa-eye"></i> Enhanced Competitive Intelligence:</strong> Predictive analytics improved decision-making, allowing firms to act ahead of market shifts.</li>
-                        <li><strong><i class="fas fa-chart-line"></i> 30% Increase in Operational Efficiency:</strong> Automated insights streamlined internal workflows, boosting overall productivity.</li>
-                    </ul>
                 </div>
             </div>
-            <div class="section-divider"></div>
-        </section>
+            <div class="case-section">
+                <h3>Problem</h3>
+                <ul>
+                    <li>Large, unstructured datasets made extracting meaningful insights difficult.</li>
+                    <li>Traditional market research methods were slow and resource-intensive.</li>
+                    <li>Limited ability to track real-time consumer behavior and preferences.</li>
+                    <li>Inefficiencies in data-driven decision-making impacted product launches and campaign effectiveness.</li>
+                </ul>
+            </div>
+            <div class="case-section">
+                <h3>AI-Driven Solution</h3>
+                <ul>
+                    <li><strong>Advanced Data Analytics:</strong> AI-powered tools processed vast datasets to generate real-time insights on consumer trends and market movements.</li>
+                    <li><strong>Predictive Modeling:</strong> Machine learning algorithms forecasted sales trends, customer preferences, and demand shifts for proactive decision-making.</li>
+                    <li><strong>Domain-Specific Chatbots:</strong> Intelligent AI-driven assistants facilitated industry-specific queries, accelerating research timelines.</li>
+                    <li><strong>Automated Reporting & Visualization:</strong> AI-generated reports provided clear, actionable insights, reducing manual data processing time.</li>
+                </ul>
+            </div>
+            <div class="case-section">
+                <h3>Key Results</h3>
+                <ul class="results-list">
+                    <li><span class="result-metric">70% Faster Market Research:</span> AI-powered tools accelerated data collection, processing, and analysis.</li>
+                    <li><span class="result-metric">Enhanced Competitive Intelligence:</span> Predictive analytics improved decision-making, allowing firms to act ahead of market shifts.</li>
+                    <li><span class="result-metric">30% Increase in Operational Efficiency:</span> Automated insights streamlined internal workflows, boosting overall productivity.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <section id="journey" class="journey-section">
-            <div class="container">
-                <h2><i class="fas fa-road"></i> Your AI Journey Starts Here</h2>
+    <section id="journey" class="ai-journey">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your AI Journey Starts Here</h2>
+                <div class="underline"></div>
                 <p class="section-intro">Reimagine what's possible with AI. We help you reimagine workflows, streamline operations, and scale solutions for sustainable growth.</p>
-                
-                <div class="journey-steps">
-                    <div class="journey-step">
-                        <div class="step-number">1</div>
-                        <h3><i class="fas fa-search"></i> Readiness Assessment</h3>
-                        <p>Prepare your organization for AI transformation. Evaluate your workforce, data infrastructure, and technology to ensure readiness. We provide actionable recommendations to mobilize your team and maximize adoption.</p>
+            </div>
+            <div class="journey-grid">
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-clipboard-check"></i>
                     </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">2</div>
-                        <h3><i class="fas fa-map"></i> Strategy Development</h3>
-                        <p>Craft a roadmap for AI success. Collaborate with Intelleo to create a detailed AI strategy that aligns with your goals. From initial planning to execution, we guide your journey to AI-driven innovation.</p>
+                    <h3>Readiness Assessment</h3>
+                    <p>Prepare your organization for AI transformation. Evaluate your workforce, data infrastructure, and technology to ensure readiness.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-map-marked-alt"></i>
                     </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">3</div>
-                        <h3><i class="fas fa-lightbulb"></i> Use Case Discovery</h3>
-                        <p>Identify where AI delivers the most value. Uncover high-impact opportunities within your business. Our experts assess feasibility, ROI, and strategic alignment to help you prioritize and allocate resources effectively.</p>
+                    <h3>Strategy Development</h3>
+                    <p>Craft a roadmap for AI success. Collaborate with Intelleo to create a detailed AI strategy that aligns with your goals.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-search"></i>
                     </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">4</div>
-                        <h3><i class="fas fa-cogs"></i> Model Development</h3>
-                        <p>AI tailored to your business needs. Build models aligned with your goals, from fine-tuned pre-trained solutions to custom algorithms that tackle your biggest challenges.</p>
+                    <h3>Use Case Discovery</h3>
+                    <p>Identify where AI delivers the most value. Uncover high-impact opportunities within your business.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-code-branch"></i>
                     </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">5</div>
-                        <h3><i class="fas fa-plug"></i> AI Integration</h3>
-                        <p>Seamlessly incorporate AI into your workflows. Embed AI into your existing systems with minimal disruption. Our team ensures smooth integration and deployment, enhancing operational efficiency and driving measurable results.</p>
+                    <h3>Model Development</h3>
+                    <p>AI tailored to your business needs. Build models aligned with your goals, from fine-tuned pre-trained solutions to custom algorithms.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-plug"></i>
                     </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">6</div>
-                        <h3><i class="fas fa-database"></i> Data Synthesis</h3>
-                        <p>Overcome data limitations with smarter solutions. Generate high-quality synthetic data to address imbalances and scarcity in datasets. Our data augmentation techniques ensure your AI models are accurate, insightful, and ready for real-world challenges.</p>
+                    <h3>AI Integration</h3>
+                    <p>Seamlessly incorporate AI into your workflows. Embed AI into your existing systems with minimal disruption.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-database"></i>
                     </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">7</div>
-                        <h3><i class="fas fa-chart-line"></i> Optimization</h3>
-                        <p>Keep your AI delivering results. Continuously monitor and optimize your AI solutions to adapt to changing business needs. Proactive updates and evaluations ensure peak performance and long-term value.</p>
+                    <h3>Data Synthesis</h3>
+                    <p>Overcome data limitations with smarter solutions. Generate high-quality synthetic data to address imbalances and scarcity in datasets.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">8</div>
-                        <h3><i class="fas fa-shield-alt"></i> Governance and Ethics</h3>
-                        <p>Build AI solutions you can trust. Ensure ethical and responsible use of AI with frameworks for data privacy, bias mitigation, and compliance. We help you build trust and transparency into every solution.</p>
+                    <h3>Optimization</h3>
+                    <p>Keep your AI delivering results. Continuously monitor and optimize your AI solutions to adapt to changing business needs.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    
-                    <div class="journey-step">
-                        <div class="step-number">9</div>
-                        <h3><i class="fas fa-building"></i> Center of Excellence</h3>
-                        <p>One hub for enterprise AI. Establish a dedicated hub for AI initiatives. Streamline collaboration, oversight, and execution to maximize AI impact across your organization.</p>
+                    <h3>Governance and Ethics</h3>
+                    <p>Build AI solutions you can trust. Ensure ethical and responsible use of AI with frameworks for data privacy, bias mitigation, and compliance.</p>
+                </div>
+                <div class="journey-card">
+                    <div class="journey-icon">
+                        <i class="fas fa-building"></i>
                     </div>
+                    <h3>Center of Excellence</h3>
+                    <p>One hub for enterprise AI. Establish a dedicated hub for AI initiatives. Streamline collaboration, oversight, and execution.</p>
                 </div>
             </div>
-            <div class="section-divider"></div>
-        </section>
+        </div>
+    </section>
 
-        <section id="about" class="about-section">
-            <div class="container">
-                <h2><i class="fas fa-info-circle"></i> About Intelleo</h2>
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="src/images/about-intelleo.svg" alt="Intelleo Team">
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <div class="underline"></div>
+                <p class="section-intro">Ready to start your AI journey? Get in touch with our team.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>sandeep@intelleo.in</p>
                     </div>
-                    <div class="about-text">
-                        <p><i class="fas fa-history"></i> Since 2020, Intelleo has been at the forefront of AI innovation, delivering end-to-end solutions that transform businesses. Our core competence lies in building innovative AI solutions that drive productivity, improve results, and facilitate seamless change management.</p>
-                        <p><i class="fas fa-brain"></i> We specialize in Agentic AI, Natural Language Processing (NLP), Predictive Analytics, and Data Engineering solutions that turn complex data into actionable insights, fostering innovation and driving strategic growth for our clients.</p>
-                        <div class="about-values">
-                            <div class="value-item">
-                                <i class="fas fa-award"></i>
-                                <span>Excellence</span>
-                            </div>
-                            <div class="value-item">
-                                <i class="fas fa-handshake"></i>
-                                <span>Integrity</span>
-                            </div>
-                            <div class="value-item">
-                                <i class="fas fa-lightbulb"></i>
-                                <span>Innovation</span>
-                            </div>
-                            <div class="value-item">
-                                <i class="fas fa-users"></i>
-                                <span>Collaboration</span>
-                            </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Intelleo Headquarters</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
                 </div>
             </div>
-            <div class="section-divider"></div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2><i class="fas fa-envelope"></i> Contact Us</h2>
-                <p>Ready to transform your business with AI? Get in touch with us.</p>
-                <a href="mailto:sandeep@intelleo.in" class="contact-button"><i class="fas fa-paper-plane"></i> sandeep@intelleo.in</a>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="src/images/Intelleo Logo.png" alt="Intelleo Logo" class="logo-img">
-                    <span>Intelleo</span>
+                    <img src="images/Logo.png" alt="Intelleo Logo">
                 </div>
-                <p>&copy; 2024 Intelleo. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Intelleo. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="src/js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html> 
